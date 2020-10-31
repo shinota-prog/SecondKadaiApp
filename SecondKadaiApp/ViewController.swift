@@ -10,8 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
     @IBOutlet weak var inputTable: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

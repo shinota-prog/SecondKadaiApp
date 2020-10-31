@@ -19,8 +19,7 @@ class ResultViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        let outPutValue  = name
-        outPutLabel.text = "こんにちは、\(outPutValue) さん"
+        outPutLabel.text = "こんにちは、\(name) さん"
     }
     
 
