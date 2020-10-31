@@ -21,39 +21,37 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9z-f0-Z7q">
-                                <rect key="frame" x="180" y="399" width="54" height="42"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FRC-fh-zTE">
+                                <rect key="frame" x="112" y="209" width="190" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9z-f0-Z7q">
+                                <rect key="frame" x="180" y="374" width="54" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Click"/>
                                 <connections>
                                     <segue destination="Vj5-JG-hOR" kind="show" id="p7x-sG-KD3"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="agu-kg-a7j">
-                                <rect key="frame" x="52" y="265" width="323" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="pc5-cZ-WQ9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7FI-cE-cwT"/>
                             <constraint firstItem="d9z-f0-Z7q" firstAttribute="top" secondItem="pc5-cZ-WQ9" secondAttribute="bottom" constant="100" id="D9a-yq-vLR"/>
                             <constraint firstItem="d9z-f0-Z7q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DXY-qb-Okw"/>
-                            <constraint firstItem="d9z-f0-Z7q" firstAttribute="top" secondItem="agu-kg-a7j" secondAttribute="bottom" constant="100" id="Ggn-CW-UNa"/>
                             <constraint firstItem="pc5-cZ-WQ9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="IAI-Od-dMZ"/>
                             <constraint firstItem="d9z-f0-Z7q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IM2-jS-IYv"/>
-                            <constraint firstItem="agu-kg-a7j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M2b-Ww-2KW"/>
                             <constraint firstItem="pc5-cZ-WQ9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M4i-mb-0dl"/>
                             <constraint firstItem="pc5-cZ-WQ9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="SkW-4H-Uex"/>
                             <constraint firstItem="d9z-f0-Z7q" firstAttribute="top" secondItem="pc5-cZ-WQ9" secondAttribute="bottom" constant="100" id="W2s-9v-ZD0"/>
-                            <constraint firstItem="agu-kg-a7j" firstAttribute="top" secondItem="pc5-cZ-WQ9" secondAttribute="bottom" constant="100" id="gfg-Qa-bzo"/>
                             <constraint firstItem="pc5-cZ-WQ9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="nZn-ok-whH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="inputTable" destination="agu-kg-a7j" id="gcC-qo-0Br"/>
+                        <outlet property="inputTable" destination="FRC-fh-zTE" id="CId-gC-r0h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -94,13 +92,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="0RQ-Yp-1oB"/>
                     <connections>
-                        <outlet property="outPutValue" destination="DF5-b9-t2c" id="iEY-Qg-oNb"/>
+                        <outlet property="outPutLabel" destination="DF5-b9-t2c" id="h1N-mM-pha"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DZN-cY-5uE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Qo8-rx-A5l" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="796" y="116"/>
+            <point key="canvasLocation" x="795.6521739130435" y="115.84821428571428"/>
         </scene>
     </scenes>
 </document>
